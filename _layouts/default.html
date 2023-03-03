@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "es-MX" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Saltar al contenido.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"> Gracias por apoyar <a href="#" target="_blank">Somos Bitcoin</a></span>
+        ⚡ <a target="_blank" href="lightning:somosbitcoin@getalby.com"> somosbitcoin@getalby.com </a><br>
+        ⚡ <a target="_blank" href="lightning:somosbitcoin@ln.tips"> somosbitcoin@ln.tips </a>
+        <span class="site-footer-owner"> Creado por <a href="https://bio.link/jpz" target="_blank">JPZ</a></span>
+        ⚡ <a target="_blank" href="lightning:jpz@stacker.news"> jpz@stacker.news </a><br>
+        ⚡ <a target="_blank" href="lightning:jesus@getalby.com"> jesus@getalby.com </a><br>
+        ⚡ <a target="_blank" href="lightning:jesusperalta@ln.tips"> jesusperalta@ln.tips </a><br>
+      </footer>
+    </main>
+  </body>
+</html>
